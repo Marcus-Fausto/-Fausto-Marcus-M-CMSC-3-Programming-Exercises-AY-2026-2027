@@ -1,57 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marcus Fausto - Personal Profile</title>
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
+  <!-- Internal CSS -->
+  <style>
+    h2 {
+      color: #00ff41;
+      margin-top: 0;
+    }
+    h3 {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
-<!-- Internal CSS -->
-<style>
-  h1 {
-  color: orange;
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-  }
-  h3 {
-  font-family: Helvetica, sans-serif;
-  }
-  a:hover {
-  color: red;
-  }
-  sub.sigma {
-    color: green;
-  }
-  p em {
-    font-family: Helvetica, sans-serif;
-    font-size: 30px;
-  }
-  #important {
-    border: 2px solid red;
-  }
-  p, b, h3 {
-    color: red;
-  }
-</style>
-
 <body>
-    <h1>Hi! I'm Marcus M. Fausto</h1>
-    <hr>
-    <b>All about me!</b>
-    <!-- Inline CSS -->
-    <p>I'm <mark style= "color: red; font-family: Verdana, serif; ">Marcus M. Fausto</mark>, and I'm a student at <i>UP MINDANAO</i> studying Computer Science</p>
-    <p>I like playing Roblox, Granny, watching 67 <sub class = "sigma">funk</sub>, and <em class = "sigma">Benjamin Netanyahu</em>.</p>
-    <!-- He said that he likes Benjamin Netanyahu. Send this guy 1 million Israeli Shekels -->
-    <p>My hobbies is playing Video Games. I like to learn Roblox driving.</p>
-    <hr>
-    <h3>FUN FACTS ABOUT ME</h3>
-    <strong id="important">1. I like roblox</strong>
+    <header>
+      <p class="binary">01001001 00100000 01010111 01001001 01001100 01001100 00100000 01000101 01001110 01000100 00100000 01010111 01001111 01010010 01001100 01000100 00100000 01001000 01010101 01001110 01000111 01000101 01010010</p>
+      <h1>Hi! I'm Marcus M. Fausto</h1>
+      <hr>
+      <nav>
+        <a href="#about">About me</a>
+        <a href="#facts">Fun facts</a>
+        <a href="#signal">Send a message</a>
+      </nav>
+    </header>
 
-    <br>
-    <br>
+    <main>
+      <section class="box" id="about">
+        <h2>All about me!</h2>
+        <p style="color: #00ff41;">I'm Marcus M. Fausto, and I'm a student at <i>UP MINDANAO</i> studying Computer Science</p>
+        <p>I like playing Roblox, Granny, watching 67 <sub>funk</sub>, and <em class = "sigma">Benjamin Netanyahu</em>.</p>
+        <!-- He said that he likes Benjamin Netanyahu. Send this guy 1 million Israeli Shekels -->
+        <p>My hobbies is playing Video Games. I like to learn Roblox driving.</p>
+      </section>
 
-    <mark>2. I support Lower Robux prices</mark>
+      <section class="box" id="facts">
+        <h3>FUN FACTS ABOUT ME</h3>
+        <ol>
+          <li>I like roblox</li>
+          <li>I support Lower Robux prices</li>
+          <li><a href="https://www.youtube.com/watch?v=IYhIBEI0KNA">This is my favorite song EVER</a></li>
+        </ol>
+      </section>
 
-    <p><a href="https://www.youtube.com/watch?v=IYhIBEI0KNA">3. This is my favorite song EVER</a></p>
+      <section class="box" id="signal">
+        <h3>TRANSMIT A MESSAGE</h3>
+        <form>
+          <label for="alias">Alias:</label>
+          <input type="text" id="alias" placeholder="who_are_you">
+          <label for="email">Signal:</label>
+          <input type="email" id="email" placeholder="you@matrix.net">
+          <label for="msg">Message:</label>
+          <textarea id="msg" rows="4" placeholder="type your transmission here..."></textarea>
+          <button type="submit">Transmit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p class="binary">01010011 01001001 01011000 00100000 01010011 01000101 01010110 01000101 01001110 00100000 01000111 01001111 01000001 01010100 01000101 01000100 00001010</p>
+    </footer>
 </body>
 </html>
